@@ -1,0 +1,113 @@
+body{
+  background: url(assets/concert.jpg) no-repeat center center fixed;
+}
+
+.landing{
+  color: rgb(161, 30, 30);
+  z-index: 3;
+  position: fixed;
+  background-color: black;
+}
+
+.enterButton{
+  background-color: rgb(161, 30, 30);
+  color: black;
+  font-size: 2.25em;
+  height: 30%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.perm{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(61, 61, 61);
+}
+
+#map{
+  height: 50vh;
+  width: 80%;
+}
+
+form{
+  text-align: center;
+}
+
+.loading{
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.loadingCard{
+  background-color: rgba(223, 165, 66, .5);
+  width: 35%;
+}
+
+.loadingCard>img{
+  max-height: 200px;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+     .enterButton{
+      font-size: 1.5em;
+    }
+
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    .enterButton{
+      font-size: 1.5em;
+      height: 50%;
+    }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .enterButton{
+      font-size: 2.25em;
+    }
+
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .enterButton{
+      font-size: 1.5em;
+      height: 50%;
+    }
+
+}
+
+.hidden{
+  display: none;
+}
